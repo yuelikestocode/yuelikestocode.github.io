@@ -25,7 +25,7 @@ const BlogIndex = ({ data, location }) => {
   return (
     <Layout location={location} title={siteTitle}>
       <Bio />
-      <p>
+      <p className="text-sm">
         Check out my <a href="/resume/">resume</a>.
       </p>
       <ol style={{ listStyle: `none` }}>

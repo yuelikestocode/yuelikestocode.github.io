@@ -8,21 +8,21 @@ const Layout = ({ location, title, children }) => {
 
   if (isRootPath) {
     header = (
-      <h1 className="main-heading">
+      <h1 className="text-7xl">
         <Link to="/">{title}</Link>
       </h1>
     )
   } else {
     header = (
-      <Link className="header-link-home" to="/">
+      <Link className="font-bold text-2xl" to="/">
         {title}
       </Link>
     )
   }
 
   return (
-    <div className="global-wrapper" data-is-root-path={isRootPath}>
-      <header className="global-header">{header}</header>
+    <div className={`mx-auto max-w-2xl px-10 py-5 ${isRootPath ? 'mb-20' : ''}`} data-is-root-path={isRootPath}>
+      <header className="mb-12">{header}</header>
       <main>{children}</main>
       <footer>
         Built with

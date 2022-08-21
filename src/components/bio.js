@@ -6,52 +6,44 @@
  */
 
 import * as React from "react"
-import { useStaticQuery, graphql, Link } from "gatsby"
-import { StaticImage } from "gatsby-plugin-image"
+
+const SocialItem = ({ label, altText, href }) => {
+  return (
+    <div>
+      <span className="bg-stone-200">
+        {label}: <a href={href}>{altText}</a>
+      </span>
+    </div>
+  )
+}
 
 const Bio = () => {
-  const data = useStaticQuery(graphql`
-    query BioQuery {
-      site {
-        siteMetadata {
-          author {
-            name
-            summary
-          }
-          social {
-            twitter
-          }
-        }
-      }
-    }
-  `)
-
-  // Set these values by editing "siteMetadata" in gatsby-config.js
-  const author = data.site.siteMetadata?.author
-  const social = data.site.siteMetadata?.social
-
   return (
-    <div className="bio">
+    <div className="flex flex-col">
       <div>
-        <p>A software engineer who likes to work on interesting stuff.</p>
-        <div className="Social">
-          <div>
-            Twitter:{" "}
-            <a href="https://twitter.com/YueLikesToCode">@YueLikesToCode</a>
-          </div>
-          <div>
-            Github (Contributions):{" "}
-            <a href="https://github.com/yuelikestocode">yuelikestocode</a>
-          </div>
-          <div>
-            Github (Personal):{" "}
-            <a href="https://github.com/yuyueshihaoren">yuyueshihaoren</a>
-          </div>
-          <div>
-            Linkedin:{" "}
-            <a href="https://www.linkedin.com/in/yue-yu323/">yue-yu323</a>
-          </div>
-        </div>
+        <p className="italic text-base">A software engineer who likes to work on interesting stuff.</p>
+      </div>
+      <div className="text-sm grid sm:grid-cols-2 sm:grid-rows-2 gap-1 grid-cols-1 grid-row-4">
+        <SocialItem
+          label="Twitter"
+          altText="@YueLikesToCode"
+          href="https://twitter.com/YueLikesToCode"
+        />
+        <SocialItem
+          label="Github (Contributions)"
+          altText="yuelikestocode"
+          href="https://github.com/yuelikestocode"
+        />
+        <SocialItem
+          label="Github (Personal)"
+          altText="yue-yu323"
+          href="https://github.com/yuyueshihaoren"
+        />
+        <SocialItem
+          label="Linkedin"
+          altText="@YueLikesToCode"
+          href="https://www.linkedin.com/in/yue-yu323/"
+        />
       </div>
     </div>
   )

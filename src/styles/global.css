@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+:after,
+:before {
+  @apply box-border;
+}
+
+html {
+  @apply leading-6 text-base text-black antialiased;
+}
+
+body {
+  @apply font-sans text-lg text-slate-800 bg-zinc-200;
+}
+
+footer {
+  @apply py-6;
+}
+
+hr {
+  @apply bg-zinc-700 border-0 h-1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-sans mt-12 mb-6 leading-snug tracking-tight;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-bold text-amber-700;
+}
+
+h1 {
+  @apply text-6xl font-bold text-amber-900;
+}
+
+h2 {
+  @apply text-3xl text-amber-800;
+}
+
+h3 {
+  @apply text-xl;
+}
+
+h3 {
+  @apply text-lg;
+}
+
+h4 {
+  @apply text-base;
+}
+
+h5 {
+  @apply text-sm;
+}
+
+h5 {
+  @apply text-xs;
+}
+
+h1 > a,
+h2 > a,
+h3 > a,
+h4 > a,
+h5 > a,
+h6 > a {
+  @apply text-inherit no-underline;
+}
+
+p {
+  @apply my-2;
+}
+
+ul,
+ol {
+  @apply list-outside mb-8;
+}
+
+ul li,
+ol li,
+li > p {
+  @apply mb-4;
+}
+
+li *:last-child {
+  @apply mb-0;
+}
+
+li > ul {
+  @apply ml-8 mt-4;
+}
+
+blockquote {
+  @apply text-teal-700 -ml-6 mr-8 pl-6 border-l-2 border-solid border-x-cyan-800 text-base italic mb-8;
+}
+
+blockquote > :last-child {
+  @apply mb-0;
+}
+
+blockquote > ul,
+blockquote > ol {
+  @apply list-inside;
+}
+
+table {
+  @apply w-full mb-8 border-collapse border-spacing-1;
+}
+
+table thead tr th {
+  @apply border-b-2 border-solid border-amber-700;
+}
+
+a {
+  @apply text-amber-700;
+}
+
+
+/* pre {
+    @apply font-mono text-base
+} */
