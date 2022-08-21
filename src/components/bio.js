@@ -34,21 +34,23 @@ const Bio = () => {
     <div className="bio">
       <div>
         <p>A software engineer who likes to work on interesting stuff.</p>
-        <div>
-          Twitter:{" "}
-          <a href="https://twitter.com/YueLikesToCode">@YueLikesToCode</a>
-        </div>
-        <div>
-          Github (Contributions):{" "}
-          <a href="https://github.com/yuelikestocode">yuelikestocode</a>
-        </div>
-        <div>
-          Github (Personal):{" "}
-          <a href="https://github.com/yuyueshihaoren">yuyueshihaoren</a>
-        </div>
-        <div>
-          Linkedin:{" "}
-          <a href="https://www.linkedin.com/in/yue-yu323/">yue-yu323</a>
+        <div className="Social">
+          <div>
+            Twitter:{" "}
+            <a href="https://twitter.com/YueLikesToCode">@YueLikesToCode</a>
+          </div>
+          <div>
+            Github (Contributions):{" "}
+            <a href="https://github.com/yuelikestocode">yuelikestocode</a>
+          </div>
+          <div>
+            Github (Personal):{" "}
+            <a href="https://github.com/yuyueshihaoren">yuyueshihaoren</a>
+          </div>
+          <div>
+            Linkedin:{" "}
+            <a href="https://www.linkedin.com/in/yue-yu323/">yue-yu323</a>
+          </div>
         </div>
       </div>
     </div>
