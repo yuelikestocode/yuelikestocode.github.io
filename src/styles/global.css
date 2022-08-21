@@ -38,15 +38,15 @@ h3,
 h4,
 h5,
 h6 {
-  @apply font-bold text-amber-700;
+  @apply font-bold text-sky-700;
 }
 
 h1 {
-  @apply text-6xl font-bold text-amber-900;
+  @apply text-6xl font-bold text-sky-900;
 }
 
 h2 {
-  @apply text-3xl text-amber-800;
+  @apply text-3xl text-sky-800;
 }
 
 h3 {
@@ -119,11 +119,11 @@ table {
 }
 
 table thead tr th {
-  @apply border-b-2 border-solid border-amber-700;
+  @apply border-b-2 border-solid border-sky-700;
 }
 
 a {
-  @apply text-amber-700;
+  @apply text-sky-700;
 }
 
 
