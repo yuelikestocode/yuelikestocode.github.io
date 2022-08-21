@@ -36,12 +36,12 @@ const Bio = () => {
         />
         <SocialItem
           label="Github (Personal)"
-          altText="yue-yu323"
+          altText="yuyueshihaoren"
           href="https://github.com/yuyueshihaoren"
         />
         <SocialItem
           label="Linkedin"
-          altText="@YueLikesToCode"
+          altText="yue-yu323"
           href="https://www.linkedin.com/in/yue-yu323/"
         />
       </div>
