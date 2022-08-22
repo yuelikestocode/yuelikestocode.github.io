@@ -1,312 +1,337 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab");
+@import url("https://fonts.googleapis.com/css?family=Tangerine");
+@import url("https://fonts.googleapis.com/css?family=Ultra");
+@import url("https://fonts.googleapis.com/css?family=Sanchez");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro");
+@import url("https://fonts.googleapis.com/css?family=Source+Serif+Pro");
+@import url("https://fonts.googleapis.com/css?family=Scope One");
+@import url("https://fonts.googleapis.com/css?family=Crimson Text");
+@import url("https://fonts.googleapis.com/css?family=Bree+Serif");
+@import url("https://fonts.googleapis.com/css?family=Domine");
+@import url("https://fonts.googleapis.com/css?family=Aboreto");
+@import url("https://fonts.googleapis.com/css?family=Chonburi");
+@import url("https://fonts.googleapis.com/css?family=Oxanium");
+@import url("https://fonts.googleapis.com/css?family=Fira+Mono");
+@import url("https://fonts.googleapis.com/css?family=Ubuntu+Mono");
+@import url("https://fonts.googleapis.com/css?family=Rubik");
+@import url("https://fonts.googleapis.com/css?family=Fugaz+One");
+@import url("https://fonts.googleapis.com/css?family=Gruppo");
+@import url("https://fonts.googleapis.com/css?family=Lemonada");
+@import url("https://fonts.googleapis.com/css?family=Lemon");
+@import url("https://fonts.googleapis.com/css?family=Dekko");
+@import url("https://fonts.googleapis.com/css?family=Bangers");
+@import url("https://fonts.googleapis.com/css?family=Black+Ops+One");
+
 @page {
-    size: letter portrait;
-  }
-  
-  sup {
-    line-height: 0;
-  }
-  
-  :root {
-    /* --list-style: ">>> "; */
-    /* --list-padding-left: 0.33in; */
-    --list-style: circle;
-    --list-padding-left: 0.15in;
-    /* --list-style: none;
-    --list-padding-left: 0; */
-  }
-  
-  /* ---body START--- */
-  
-  body {
-    display: grid;
-    grid-template-columns: 5.9in 2.5in;
-    grid-column-gap: 0.1in;
-    grid-template-rows: 1.2in auto;
-    grid-row-gap: 0.1in;
-    grid-template-areas:
-      "header header"
-      "main side";
-  
-    position: relative;
-    padding: 0.1in;
-    margin: 0;
-  
-    width: 8.5in;
-    height: 11in;
-  
-    max-width: 8.5in;
-    max-height: 11in;
-  
-    /* border-width: 0.01in;
-    border-style: solid;
-    border-color: black; */
-  }
-  
-  body * {
-    font-family: "Source Sans Pro", "Ubuntu", "Noto Sans", sans-serif;
-    font-size: 14;
-    margin: 0;
-    padding: 0;
-  }
-  
-  body a {
-    color: black;
-    text-decoration: none;
-  }
-  
-  body h2 {
-    font-family: "Aboreto";
-  }
-  
-  body h3 {
-    font-family: "Source Sans Pro";
-    margin-block: 0;
-  }
-  
-  body ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  body em {
-    font-family: "Crimson Text";
-  }
-  
-  /* ---body END--- */
-  
-  /* ---heading START--- */
-  #heading {
-    grid-area: header;
-  
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    gap: 0.01in;
-  
-    padding: 0.1in;
-    border-style: solid;
-    border-width: 0.05in;
-    border-radius: 0.2in;
-    border-color: black;
-  }
-  
-  #heading > p,
-  #heading > p * {
-    font-family: "Domine";
-    font-size: 12;
-  }
-  
-  #heading h1 {
-    font-family: "Aboreto";
-    font-weight: 700;
-    text-align: center;
-    font-size: 36;
-    letter-spacing: 0.1in;
-  }
-  
-  #heading ul {
-    display: flex;
-    flex-direction: row;
-    gap: 0.1in;
-  
-    font-size: 14;
-  }
-  
-  #heading li {
-    padding: 0.02in 0.06in;
-  
-    /* border-width: 0.01in;
-    border-color: black;
-    border-style: solid;
-    border-radius: .1in; */
-  }
-  
-  /* #heading li,
-  #heading li * {
-    font-family: "Lemonada";
-  } */
-  
-  /* ---heading END--- */
-  
-  /* ---side START--- */
-  #side {
-    grid-area: side;
-    border-radius: 0.3in;
-    border-style: outset;
-    border-width: 0.1in;
-    padding: 0.05in;
-  }
-  
-  #side * {
-    font-size: 12;
-  }
-  
-  #side h2 {
-    font-size: 16;
-    margin: 0.05in 0in;
-  }
-  
-  #side h3 {
-    font-size: 14;
-    font-weight: 600;
-    margin: 0.05in 0in;
-  }
-  
-  #side ul {
-    margin: 0;
-    margin-bottom: 0.05in;
-  }
-  
-  #side ul li {
-    margin: 0;
-  }
-  
-  /* ---skills START--- */
-  
-  #skills + div {
-    display: grid;
-    grid-auto-flow: column;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr auto;
-  
-    gap: 0.005in 0.09in;
-    /* padding: .05in; */
-  }
-  
-  #skills + div > p em {
-    font-size: 12;
-  }
-  
-  #skills + div ul {
-    margin: 0.05in 0in;
-  }
-  
-  #skills + div > ul > li {
-    font-family: "Roboto Slab";
-    font-size: 11;
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-  
-    margin-left: -0.03in;
-  }
-  
-  #skills + div ul li::before {
-    content: "";
-    font-size: 2;
-    padding-top: .06in;
-    margin-right: 0.03in;
-  }
-  
-  /* ---skills END--- */
-  
-  #education ~ ul {
-    flex-wrap: wrap;
-    display: flex;
-    flex-direction: row;
-    align-content: space-between;
-    justify-content: space-between;
-    gap: 0.1in 0;
-  
-    margin-top: .1in;
-    margin-bottom: .1in;
-  }
-  
-  #additional-information ~ ul {
-    display: flex;
-    flex-direction: column;
-    gap: 0.1in;
-    margin-top: .1in;
-    margin-bottom: .12in;
-    list-style: var(--list-style);
-    padding-left: var(--list-padding-left);
-  }
-  
-  /* #additional-information ~ ul li {
-    margin-bottom: 0.1in;
-  } */
-  /* ---side END--- */
-  
-  /* ---main-body START--- */
-  #main-body {
-    grid-area: main;
-  
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 0.2in;
-  
-    /* --h3-line-margin: 0.1in 0in; */
-  }
-  
-  #main-body strong {
-    font-family: "Ubuntu";
-    font-weight: normal;
-    /* border-block: 0.01in solid; */
-    /* writing-mode: horizontal-tb; */
-  }
-  
-  #main-body > div {
-    display: grid;
-    grid-template-columns: 5fr 4fr;
-    grid-template-rows: auto;
-    grid-row-gap: 0.05in;
-    align-items: baseline;
-  }
-  
-  #main-body h2 {
-    grid-column: 1 / span 2;
-    font-size: 22;
-    font-weight: normal;
-  }
-  
-  #main-body h3 ~ * {
-    grid-column: 1 / span2;
-  }
-  
-  #main-body h3 + * {
-    grid-column: 2;
-    justify-self: end;
-  }
-  
-  #main-body h3 {
-    grid-column: 1;
-    font-size: 17;
-    font-weight: 800;
-    padding-top: 0.05in;
-  }
-  
-  #experiencediv h3 ~ ul:nth-of-type(even),
-  #projectsdiv ul {
-    /* padding-left: var(--list-padding-left); */
-    /* list-style: var(--list-style); */
-    line-height: 0.2in;
-    display: flex;
-    flex-direction: column;
-    gap: 0.06in;
-  }
-  
-  
-  #experiencediv h3 ~ ul:nth-of-type(even) > li::before,
-  #projectsdiv ul > li::before {
-    content: '>';
-    margin-right: .05in;
-    font-family: 'Ultra';
-  }
-  
-  #experiencediv h3 ~ ul:nth-of-type(odd) {
-    padding-left: 0;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 0 1in;
-  
-    align-content: space-between;
-    justify-content: space-between;
-  }
-  
-  /* ---main-body END--- */
-  
+  size: letter portrait;
+}
+
+sup {
+  line-height: 0;
+}
+
+:root {
+  /* --list-style: ">>> "; */
+  /* --list-padding-left: 0.33in; */
+  --list-style: circle;
+  --list-padding-left: 0.15in;
+  /* --list-style: none;
+  --list-padding-left: 0; */
+}
+
+/* ---body START--- */
+
+body {
+  display: grid;
+  grid-template-columns: 5.9in 2.5in;
+  grid-column-gap: 0.1in;
+  grid-template-rows: 1.2in auto;
+  grid-row-gap: 0.1in;
+  grid-template-areas:
+    "header header"
+    "main side";
+
+  position: relative;
+  padding: 0.1in;
+  margin: 0;
+
+  width: 8.5in;
+  height: 11in;
+
+  max-width: 8.5in;
+  max-height: 11in;
+
+  /* border-width: 0.01in;
+  border-style: solid;
+  border-color: black; */
+}
+
+body * {
+  font-family: "Source Sans Pro", "Ubuntu", "Noto Sans", sans-serif;
+  font-size: 14;
+  margin: 0;
+  padding: 0;
+}
+
+body a {
+  color: black;
+  text-decoration: none;
+}
+
+body h2 {
+  font-family: "Aboreto";
+}
+
+body h3 {
+  font-family: "Source Sans Pro";
+  margin-block: 0;
+}
+
+body ul {
+  list-style: none;
+  padding: 0;
+}
+
+body em {
+  font-family: "Crimson Text";
+}
+
+/* ---body END--- */
+
+/* ---heading START--- */
+#heading {
+  grid-area: header;
+
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 0.01in;
+
+  padding: 0.1in;
+  border-style: solid;
+  border-width: 0.05in;
+  border-radius: 0.2in;
+  border-color: black;
+}
+
+#heading > p,
+#heading > p * {
+  font-family: "Domine";
+  font-size: 12;
+}
+
+#heading h1 {
+  font-family: "Aboreto";
+  font-weight: 700;
+  text-align: center;
+  font-size: 36;
+  letter-spacing: 0.1in;
+}
+
+#heading ul {
+  display: flex;
+  flex-direction: row;
+  gap: 0.1in;
+
+  font-size: 14;
+}
+
+#heading li {
+  padding: 0.02in 0.06in;
+
+  /* border-width: 0.01in;
+  border-color: black;
+  border-style: solid;
+  border-radius: .1in; */
+}
+
+/* #heading li,
+#heading li * {
+  font-family: "Lemonada";
+} */
+
+/* ---heading END--- */
+
+/* ---side START--- */
+#side {
+  grid-area: side;
+  border-radius: 0.3in;
+  border-style: outset;
+  border-width: 0.1in;
+  padding: 0.05in;
+}
+
+#side * {
+  font-size: 12;
+}
+
+#side h2 {
+  font-size: 16;
+  margin: 0.05in 0in;
+}
+
+#side h3 {
+  font-size: 14;
+  font-weight: 600;
+  margin: 0.05in 0in;
+}
+
+#side ul {
+  margin: 0;
+  margin-bottom: 0.05in;
+}
+
+#side ul li {
+  margin: 0;
+}
+
+/* ---skills START--- */
+
+#skills + div {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr auto;
+
+  gap: 0.005in 0.09in;
+  /* padding: .05in; */
+}
+
+#skills + div > p em {
+  font-size: 12;
+}
+
+#skills + div ul {
+  margin: 0.05in 0in;
+}
+
+#skills + div > ul > li {
+  font-family: "Roboto Slab";
+  font-size: 11;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+
+  margin-left: -0.03in;
+}
+
+#skills + div ul li::before {
+  content: "";
+  font-size: 2;
+  padding-top: 0.06in;
+  margin-right: 0.03in;
+}
+
+/* ---skills END--- */
+
+#education ~ ul {
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  justify-content: space-between;
+  gap: 0.1in 0;
+
+  margin-top: 0.1in;
+  margin-bottom: 0.1in;
+}
+
+#additional-information ~ ul {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1in;
+  margin-top: 0.1in;
+  margin-bottom: 0.12in;
+  list-style: var(--list-style);
+  padding-left: var(--list-padding-left);
+}
+
+/* #additional-information ~ ul li {
+  margin-bottom: 0.1in;
+} */
+/* ---side END--- */
+
+/* ---main-body START--- */
+#main-body {
+  grid-area: main;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 0.2in;
+
+  /* --h3-line-margin: 0.1in 0in; */
+}
+
+#main-body strong {
+  font-family: "Ubuntu";
+  font-weight: normal;
+  /* border-block: 0.01in solid; */
+  /* writing-mode: horizontal-tb; */
+}
+
+#main-body > div {
+  display: grid;
+  grid-template-columns: 5fr 4fr;
+  grid-template-rows: auto;
+  grid-row-gap: 0.05in;
+  align-items: baseline;
+}
+
+#main-body h2 {
+  grid-column: 1 / span 2;
+  font-size: 22;
+  font-weight: normal;
+}
+
+#main-body h3 ~ * {
+  grid-column: 1 / span2;
+}
+
+#main-body h3 + * {
+  grid-column: 2;
+  justify-self: end;
+}
+
+#main-body h3 {
+  grid-column: 1;
+  font-size: 17;
+  font-weight: 800;
+  padding-top: 0.05in;
+}
+
+#experiencediv h3 ~ ul:nth-of-type(even),
+#projectsdiv ul {
+  /* padding-left: var(--list-padding-left); */
+  /* list-style: var(--list-style); */
+  line-height: 0.2in;
+  display: flex;
+  flex-direction: column;
+  gap: 0.06in;
+}
+
+#experiencediv h3 ~ ul:nth-of-type(even) > li::before,
+#projectsdiv ul > li::before {
+  content: ">";
+  margin-right: 0.05in;
+  font-family: "Ultra";
+}
+
+#experiencediv h3 ~ ul:nth-of-type(odd) {
+  padding-left: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 0 1in;
+
+  align-content: space-between;
+  justify-content: space-between;
+}
+
+/* ---main-body END--- */
