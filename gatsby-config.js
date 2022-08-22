@@ -69,6 +69,7 @@ module.exports = {
             }
           }
         `,
+        icon: 'src/images/bunny.png',
         feeds: [
           {
             serialize: ({ query: { site, allMarkdownRemark } }) => {
