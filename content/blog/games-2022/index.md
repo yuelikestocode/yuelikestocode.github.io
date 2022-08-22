@@ -1,5 +1,5 @@
 ---
-title: Game Engines, and Games I built
+title: Game Engines, and Games I Built
 date: "2022-08-21"
 description: Engines I used and games I built in Spring 2022.
 ---
