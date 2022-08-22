@@ -6,7 +6,12 @@ module.exports = {
     "./src/templates/**/*.{js,jsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        cursive: ["Festive", ],
+        display: ["'Stardos Stencil'",],
+      }
+    },
   },
   plugins: [],
 }
