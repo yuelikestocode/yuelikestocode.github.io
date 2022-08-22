@@ -2,6 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Festive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stardos+Stencil&display=swap');
+
 *,
 :after,
 :before {
@@ -42,7 +45,7 @@ h6 {
 }
 
 h1 {
-  @apply text-6xl font-bold text-sky-900;
+  @apply text-6xl font-display font-black text-sky-900;
 }
 
 h2 {
@@ -84,8 +87,17 @@ p {
 
 ul,
 ol {
-  @apply list-outside mb-8;
+  @apply list-outside mx-4 my-4;
 }
+
+ol li {
+  @apply list-decimal text-slate-600 font-medium;
+}
+
+ul li {
+  @apply list-disc text-zinc-700 font-normal;
+}
+
 
 ul li,
 ol li,
@@ -123,10 +135,6 @@ table thead tr th {
 }
 
 a {
-  @apply text-sky-700;
+  @apply text-sky-600;
 }
 
-
-/* pre {
-    @apply font-mono text-base
-} */

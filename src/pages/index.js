@@ -28,12 +28,12 @@ const BlogIndex = ({ data, location }) => {
       <p className="text-sm">
         Check out my <a href="/resume/">resume</a>.
       </p>
-      <ol style={{ listStyle: `none` }}>
+      <ol className="list-none p-0 m-0">
         {posts.map(post => {
           const title = post.frontmatter.title || post.fields.slug
 
           return (
-            <li key={post.fields.slug}>
+            <li className="list-none" key={post.fields.slug}>
               <article
                 className="post-list-item"
                 itemScope

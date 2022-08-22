@@ -14,14 +14,14 @@ const Layout = ({ location, title, children }) => {
     )
   } else {
     header = (
-      <Link className="font-bold text-2xl" to="/">
-        {title}
+      <Link className="font-bold font-display text-2xl" to="/">
+        Go Back to Home: {title}
       </Link>
     )
   }
 
   return (
-    <div className={`mx-auto max-w-2xl px-10 py-5 ${isRootPath ? 'mb-20' : ''}`} data-is-root-path={isRootPath}>
+    <div className={`mx-auto max-w-screen-lg px-10 py-5 ${isRootPath ? 'mb-20' : ''}`} data-is-root-path={isRootPath}>
       <header className="mb-12">{header}</header>
       <main>{children}</main>
       <footer>
