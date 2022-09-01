@@ -1,0 +1,10 @@
+{
+    "grammarly.selectors": [
+        {
+            "language": "markdown",
+            "scheme": "file",
+            "pattern": "content/blog/style-libc-doc/index.md"
+        }
+    ],
+    "workbench.colorTheme": "Noctis Uva"
+}
